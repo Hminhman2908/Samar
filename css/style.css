@@ -994,6 +994,14 @@ footer::before {
   }
 } */
 
+@media only screen and (max-width: 690px) {
+  .services__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+}
 @media only screen and (max-width: 640px) {
   .footer__top {
     display: none;
