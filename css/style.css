@@ -27,6 +27,10 @@ header {
   width: 100%;
 }
 
+.none {
+  display: none;
+}
+
 .container {
   max-width: 1199px;
   margin: auto;
@@ -876,5 +880,134 @@ footer::before {
 
   51% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .Carousel__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Carousel__left {
+    width: 100%;
+  }
+  .Carousel__right .Carousel__banner img {
+    display: none;
+  }
+  .services__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .services__item3 {
+    display: none;
+  }
+
+  .aboutUs__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .aboutUs__left {
+    display: none;
+  }
+  .aboutUs__right {
+    width: 100%;
+  }
+
+  .number__content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+  }
+
+  .number__item {
+    width: auto;
+  }
+
+  .features {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer__text {
+    display: none;
+  }
+  .footer__form {
+    width: 100%;
+  }
+  .footer__bottom {
+    display: flex;
+    padding: 70px 0;
+    position: relative;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer__item {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer__bottom {
+    display: flex;
+    padding: 70px 0;
+    position: relative;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer__item {
+    width: 50%;
+  }
+}
+
+/* @media only screen and (max-width: 768px) {
+  .Carousel__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Carousel__left {
+    width: 100%;
+  }
+  .Carousel__right .Carousel__banner img {
+    display: none;
+  }
+  .services__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .services__item2 {
+    display: none;
+  }
+} */
+
+@media only screen and (max-width: 640px) {
+  .footer__top {
+    display: none;
+  }
+  .footer__bottom {
+    display: flex;
+    padding: 70px 0;
+    position: relative;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer__item {
+    width: 100%;
   }
 }
